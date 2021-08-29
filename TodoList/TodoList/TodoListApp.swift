@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TodoListApp: App {
+    
+    let coreDM = CoreDataManger.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, coreDM.viewContext)
         }
     }
 }
