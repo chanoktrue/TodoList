@@ -20,7 +20,7 @@ extension Task {
     
     static func all() -> NSFetchRequest<Task> {
         let request: NSFetchRequest<Task> = Task.fetchRequest()
-        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \Task.title, ascending: false)]
         return request
     }
     

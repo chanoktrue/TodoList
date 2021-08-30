@@ -18,12 +18,21 @@ class CoreDataManger {
     }
     
     init() {
-        persistentContrainer = NSPersistentContainer(name: "TodoList")
+        //CoreData
+        //persistentContrainer = NSPersistentContainer(name: "TodoList")
+        
+        //CloudKit
+        persistentContrainer = NSPersistentCloudKitContainer(name: "TodoList")
+        
         persistentContrainer.loadPersistentStores { description, error in
             if let error = error {
                 fatalError("Unable to init core data with error: \(error)")
             }
         }
+        
+        // Cloudkit
+        viewContext.automaticallyMergesChangesFromParent = true
+        viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
     }
     
 }

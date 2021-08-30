@@ -15,6 +15,7 @@
 		CDAADC6426DB443100774C44 /* CoreDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAADC6326DB443100774C44 /* CoreDataManger.swift */; };
 		CDAADC6626DB470800774C44 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAADC6526DB470800774C44 /* TodoListViewModel.swift */; };
 		CDAADC6826DB48AC00774C44 /* Task+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAADC6726DB48AC00774C44 /* Task+Extensions.swift */; };
+		CDAADC6C26DC476700774C44 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAADC6B26DC476700774C44 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		CDAADC6326DB443100774C44 /* CoreDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManger.swift; sourceTree = "<group>"; };
 		CDAADC6526DB470800774C44 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		CDAADC6726DB48AC00774C44 /* Task+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extensions.swift"; sourceTree = "<group>"; };
+		CDAADC6926DC476000774C44 /* TodoList.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodoList.entitlements; sourceTree = "<group>"; };
+		CDAADC6B26DC476700774C44 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAADC6C26DC476700774C44 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +50,7 @@
 			children = (
 				CDAADC4C26DB40A000774C44 /* TodoList */,
 				CDAADC4B26DB40A000774C44 /* Products */,
+				CDAADC6A26DC476700774C44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +65,7 @@
 		CDAADC4C26DB40A000774C44 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				CDAADC6926DC476000774C44 /* TodoList.entitlements */,
 				CDAADC4D26DB40A000774C44 /* TodoListApp.swift */,
 				CDAADC5C26DB414900774C44 /* Views */,
 				CDAADC5E26DB415700774C44 /* ViewModels */,
@@ -111,6 +117,14 @@
 				CDAADC6726DB48AC00774C44 /* Task+Extensions.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CDAADC6A26DC476700774C44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDAADC6B26DC476700774C44 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TodoList/TodoList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content\"";
 				DEVELOPMENT_TEAM = 693P93E2N6;
@@ -325,7 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trueddns.homenano.todolist.TodoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trueddns.homenano.todolist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TodoList/TodoList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TodoList/Preview Content\"";
 				DEVELOPMENT_TEAM = 693P93E2N6;
@@ -347,7 +363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trueddns.homenano.todolist.TodoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trueddns.homenano.todolist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
