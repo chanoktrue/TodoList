@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD05A8F726DCA67200723C64 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD05A8F626DCA67200723C64 /* NoteView.swift */; };
+		CD05A8F926DCA80E00723C64 /* NoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD05A8F826DCA80E00723C64 /* NoteViewModel.swift */; };
 		CDAADC4E26DB40A000774C44 /* TodoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAADC4D26DB40A000774C44 /* TodoListApp.swift */; };
 		CDAADC5026DB40A000774C44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAADC4F26DB40A000774C44 /* ContentView.swift */; };
 		CDAADC5226DB40A200774C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDAADC5126DB40A200774C44 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD05A8F626DCA67200723C64 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		CD05A8F826DCA80E00723C64 /* NoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewModel.swift; sourceTree = "<group>"; };
 		CDAADC4A26DB40A000774C44 /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAADC4D26DB40A000774C44 /* TodoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListApp.swift; sourceTree = "<group>"; };
 		CDAADC4F26DB40A000774C44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				CDAADC4F26DB40A000774C44 /* ContentView.swift */,
+				CD05A8F626DCA67200723C64 /* NoteView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				CDAADC6526DB470800774C44 /* TodoListViewModel.swift */,
+				CD05A8F826DCA80E00723C64 /* NoteViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -196,11 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD05A8F926DCA80E00723C64 /* NoteViewModel.swift in Sources */,
 				CDAADC6426DB443100774C44 /* CoreDataManger.swift in Sources */,
 				CDAADC5026DB40A000774C44 /* ContentView.swift in Sources */,
 				CDAADC4E26DB40A000774C44 /* TodoListApp.swift in Sources */,
 				CDAADC6226DB418600774C44 /* TodoList.xcdatamodeld in Sources */,
 				CDAADC6826DB48AC00774C44 /* Task+Extensions.swift in Sources */,
+				CD05A8F726DCA67200723C64 /* NoteView.swift in Sources */,
 				CDAADC6626DB470800774C44 /* TodoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,12 +20,17 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(tasks) { task in
-                    Text(task.title ?? "Untitled")
-                        .onTapGesture {
-                            withAnimation {
-                                todoListVM.updateTask(task: task)
-                            }
-                        }
+                    
+                    NavigationLink(
+                        destination: NoteView(task: task),
+                        label: {
+                            Text(task.title ?? "Untitled")
+                                .onTapGesture {
+                                    withAnimation {
+                                        todoListVM.updateTask(task: task)
+                                    }
+                                }
+                        })
                 }
                 .onDelete(perform: { indexSet in
                     withAnimation {
